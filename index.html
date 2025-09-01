@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Desenvolvedor de Modelos de IA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 100px 0;
+        }
+        .section-padding {
+            padding: 60px 0;
+        }
+        .carousel-item img {
+            max-height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .skill-progress {
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfólio IA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">João Silva</h1>
+            <p class="lead">Desenvolvedor de Modelos de Inteligência Artificial</p>
+            <p>Construindo soluções inovadoras com IA para transformar dados em impacto.</p>
+            <a href="#contato" class="btn btn-light btn-lg mt-3">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="Foto do desenvolvedor">
+                </div>
+                <div class="col-md-6">
+                    <p>Sou um desenvolvedor apaixonado por inteligência artificial com mais de 5 anos de experiência em machine learning e deep learning. Minha missão é criar modelos de IA que resolvam problemas reais e gerem valor para empresas e comunidades.</p>
+                    <p>Especializo-me em visão computacional, processamento de linguagem natural e sistemas de recomendação. Tenho experiência com frameworks como TensorFlow, PyTorch e Scikit-learn, além de habilidades em Python, R e cloud computing.</p>
+                    <a href="#projetos" class="btn btn-primary">Veja Meus Projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section (Carousel) -->
+    <section id="projetos" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projetos</h2>
+            <div id="projetosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Projeto 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Detecção de Objetos em Tempo Real</h5>
+                            <p>Desenvolvi um modelo de visão computacional usando YOLOv5 para detecção de objetos em vídeos de drones, com precisão de 92%.</p>
+                            <a href="#" class="btn btn-outline-light btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Projeto 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Chatbot de Atendimento</h5>
+                            <p>Criei um chatbot baseado em BERT para suporte ao cliente, reduzindo o tempo de resposta em 40%.</p>
+                            <a href="#" class="btn btn-outline-light btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Projeto 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sistema de Recomendação</h5>
+                            <p>Implementei um sistema de recomendação para e-commerce usando collaborative filtering, aumentando as vendas em 15%.</p>
+                            <a href="#" class="btn btn-outline-light btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projetosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projetosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Habilidades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Python</p>
+                    <div class="progress skill-progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>TensorFlow</p>
+                    <div class="progress skill-progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>PyTorch</p>
+                    <div class="progress skill-progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>Visão Computacional</p>
+                    <div class="progress skill-progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>Processamento de Linguagem Natural</p>
+                    <div class="progress skill-progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>Cloud Computing (AWS/GCP)</p>
+                    <div class="progress skill-progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <p><i class="fas fa-envelope me-2"></i> Email: joao.silva@email.com</p>
+                        <p><i class="fas fa-phone me-2"></i> Telefone: (11) 99999-9999</p>
+                        <p><i class="fab fa-linkedin me-2"></i> LinkedIn: <a href="#">linkedin.com/in/joaosilva</a></p>
+                        <p><i class="fab fa-github me-2"></i> GitHub: <a href="#">github.com/joaosilva</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 João Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
